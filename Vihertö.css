@@ -1,20 +1,23 @@
-.kokoteksti{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    position: absolute;
-    margin-left: 600px;
-    margin-bottom: 50px;
-}
+
 
 body{
-    background-color: #e5edd3;
+        background: rgb(255,239,186);
+        background: linear-gradient(90deg, rgba(255,239,186,1) 41%,
+        rgba(199,199,199,1) 94%);
+        display: flex;   
+        flex-flow: column wrap; 
+        align-items: center;
+        font-family: 'Happy Monkey', cursive;
+         
+}
+
+header{
+    font-size: 50px;
 }
 
 h1{
     font-size: 40px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Times New Roman', Times, serif
     
 }
 p{
@@ -29,19 +32,25 @@ list-style-type:decimal;
 }
 
 
-input[type="checkbox"]{
+input[type="radio"]{
+    content: text;
     appearance: none;
     height: 40px;
-    width: 40px;
+    width: 60px;
     background-color: #d5d5d5;
+    border: 1px solid black;
     border-radius: 2.5px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     text-align: center;
+    vertical-align: middle;
     
 }
-input[type="checkbox"]:after{
+
+
+
+input[type="radio"]:after{
 
     font-weight: 900;
     content: "\0254";
@@ -49,7 +58,7 @@ input[type="checkbox"]:after{
     display: none;
 }
 
-input[type="checkbox"]:checked{
+input[type="radio"]:checked{
     background-color: #5bcd3e;
 }
 

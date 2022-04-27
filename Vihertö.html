@@ -5,29 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historiavisa</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Vihertö.css">
 </head>
 <body>
-    <div class="kokoteksti">
-    <h1>Alakoulutason tietovisa historiasta</h1>
-
+   
+    <header>Alakoulutason tietovisa historiasta</header>
+  
+<!--Ensimmäinen kysymys, jossa radiobuttoneita.-->
   <div id="kysymys1">
     <p >Mikä valtakunta hallitsi eurooppaa vuosina
         753 eaa. -1475 jaa.
     </p>
-    <input class="Historia1" type="checkbox" name="Historia1" value="1" id="HistoriaEnsimmäinen">
-    Mongolia
+    <input class="radio" type="radio" name="Historia1" value="1" id="HistoriaEnsimmäinen">
+  <span>Mongolia</span>  
 </input>
-<input class="Historia1" type="checkbox" name="Historia2" value="2" id="HistoriaToinen">
+<input class="radio" type="radio" name="Historia1" value="2" id="HistoriaToinen">
 Ruotsi
 </input>
-<input class="Historia1" type="checkbox" name="Historia3" value="3" id="HistoriaKolmas">
+<input class="radio" type="radio" name="Historia1" value="3" id="HistoriaKolmas">
 Antiikin Kreikka
 </input>
-<input class="Historia1" type="checkbox" name="Historia4" value="4" id="HistoriaNeljäs">
+<input class="radio" type="radio" name="Historia1" value="4" id="HistoriaNeljäs">
 Antiikin rooma
 </input>
 <button onclick="myFunction()" id="button1">Vastaa</button>
+<p id="vastaus1"></p>
 </div>
 <br>
 <div id="kysymys2">
@@ -37,12 +44,13 @@ Antiikin rooma
 
 <label for="Aristoteles">Valitse</label>
 <select name="Aristoteles" id="Aristoteles">
-    <option value="1">Aristoteles</option>
+    <option id="option1" value="1">Aristoteles</option>
     <option value="2">Pythagora</option>
     <option value="3">Demokritos</option>
     <option value="4">Bias</option>
 </select>
-<button onclick="myFunction()">Vastaa</button>
+<button onclick="myFunction2()" id="button2">Vastaa</button>
+<p id="vastaus2"></p>
 </div>
 
 <div id="kysymys3">
@@ -79,9 +87,9 @@ Antiikin rooma
         <option value="3">Porvari</option>
         <option value="4">Pappi</option>
     </select></li>
-
 </ol>
-<button onclick="">Vastaa</button>
+<button onclick="myFunction3()" id="button3">Vastaa</button>
+<p id="vastaus3"></p>
 </div>
 
 <div id="kysymys4">
@@ -89,22 +97,30 @@ Antiikin rooma
 <ol type="a" class="alias2" >
 <li class="alias1" value="1">Jonathan Johansson</li>
 <li class="alias1" value="2">Aleksis Kivi</li>
-<li class="alias1" value="3">Mikael Agricola</li>
+<li class="alias1" value="3" name="Mikael Agricola" id="oikea">Mikael Agricola</li>
 <li class="alias1" value="4">Martin Luther</li>
 </ol>
 <label for="name"></label>
-<input type="Mikael Agricola">
-<button onclick="myFunction()">Vastaa</button>
+<input type="Mikael Agricola" id="input1">
+<button onclick="myFunction4()" id="button4">Vastaa</button>
+<p id="vastaus4"></p>
 </div>
 
 <div id="kysymys5">
 <p>Löydettiinkö Amerikka vuonna 1492.</p>
-<input class="totta" type="checkbox" name="totta" value="1">Kyllä</input>
-<input class="totta" type="checkbox" name="totta" value="2">Ei</input>
-<button onclick="myFunction()">Vastaa</button>
+<input class="totta" type="radio" name="totta" value="1" id="q1">Kyllä</input>
+<input class="totta" type="radio" name="totta" value="2" id="q2">Ei</input>
+<button onclick="myFunction5()" id="button5">Vastaa</button>
+<p id="vastaus5"></p>
+</div>
+
+<div>
+    <p>Paina napista, kun olet vastannut kaikkiin kysymyksiin</p>
+<button onclick="myFunction6()" id="Button6">Valmis</button>
+<p id="vastaus6"></p>
+</div>
 
 </div>
-</div>
-<script src="historia.js"></script>
+<script src="Vihertö.js"></script>
 </body>
 </html>
