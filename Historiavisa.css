@@ -8,20 +8,39 @@ body{
         flex-flow: column wrap; 
         align-items: center;
         font-family: 'Happy Monkey', cursive;
-         
+        
+}
+
+nav{
+position: relative; right: 750px;
 }
 
 .kysymys{
-    margin: 15px;
-    background-color: aliceblue;
+    margin: 10px;
+    
+    
 }
 header{
     font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px 50px 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    
 }
 
+img{
+    padding-bottom: 20px;
+}
 h1{
     font-size: 40px;
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 20px;
     
 }
 p{
